@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* New Palette: Warm & Appetizing */
+  --color-primary: #d97706; /* Amber Gold (Food-centric) */
+  --color-primary-dark: #b45309; /* Deep Amber */
+  --color-secondary: #422006; /* Dark Espresso Brown (Warmer than black) */
+  --color-accent: #991b1b; /* Deep Crimson Red (Appetizing) */
+  --color-bg-light: #fffbeb; /* Warm Cream (Very light yellow/white) */
+  --color-bg-dark: #271c19; /* Dark Coffee */
+  --color-text-main: #422006;
+  --color-text-light: #78350f;
+  --color-white: #ffffff;
+
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-main);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Utilities */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 184, 148, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 99px;
+}
