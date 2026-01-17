@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { UtensilsCrossed, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -50,19 +50,15 @@ const Navbar = () => {
             textDecoration: 'none',
           }}
         >
-          <div
+          <img
+            src="/logo.png"
+            alt="Mahoo's Kitchen Logo"
             style={{
-              background: 'var(--color-primary)',
-              padding: '8px',
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: 'white',
+              height: '40px',
+              width: 'auto',
+              objectFit: 'contain',
             }}
-          >
-            <UtensilsCrossed size={20} />
-          </div>
+          />
           <span
             style={{
               fontFamily: 'var(--font-heading)',

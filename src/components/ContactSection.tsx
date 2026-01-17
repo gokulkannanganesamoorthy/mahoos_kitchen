@@ -22,15 +22,33 @@ const ContactSection = () => {
         >
           {/* Brand */}
           <div>
-            <h3
+            <div
               style={{
-                fontSize: '2rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '1rem',
                 marginBottom: '1rem',
-                color: 'white',
               }}
             >
-              Mahoo's Kitchen
-            </h3>
+              <img
+                src="/logo.png"
+                alt="Mahoo's Kitchen Logo"
+                style={{
+                  height: '50px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                }}
+              />
+              <h3
+                style={{
+                  fontSize: '2rem',
+                  color: 'white',
+                  margin: 0,
+                }}
+              >
+                Mahoo's Kitchen
+              </h3>
+            </div>
             <p
               style={{
                 color: 'rgba(255,255,255,0.9)',

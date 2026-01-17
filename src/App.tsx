@@ -16,6 +16,7 @@ function App() {
           content="Mahoo's Kitchen provides fresh, balanced, chef-crafted corporate meals in Chennai. Authentic taste met with nutrition science."
         />
         <meta name="theme-color" content="#00B894" />
+        <meta property="og:image" content="/logo.png" />
       </Helmet>
 
       <div className="app">
